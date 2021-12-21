@@ -94,7 +94,7 @@ export class News extends Component {
         <hr></hr>
         <div className="row">
           {!this.state.loading &&
-            this.state.articles.map((element) => {
+            this.state?.articles.map((element) => {
               return (
                 <div className="col-md-4" key={element.url} >
                   <Newsitem
