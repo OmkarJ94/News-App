@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-
 import Navbar from "./components/Navbar";
 import News from "./components/News";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
@@ -22,7 +21,7 @@ export default class App extends Component {
           <Navbar></Navbar>
           <LoadingBar color="#f11946" progress={this.state.progress} />
           <Switch>
-            <Route exact path="/home">
+            <Route exact path="/">
               <News
                 setProgress={this.setProgress}
                 key="home"
